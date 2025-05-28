@@ -12,10 +12,10 @@ interface ImageItem {
 }
 
 interface ImageGalleryProps {
-  initialImages: ImageItem[];
+  initialImages?: ImageItem[];
 }
 
-export const ImageGallery = ({ initialImages }: ImageGalleryProps) => {
+export const ImageGallery = ({ initialImages = [] }: ImageGalleryProps) => {
   const [images, setImages] = useState<ImageItem[]>(initialImages);
   const [page, setPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);

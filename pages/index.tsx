@@ -1,4 +1,3 @@
-// pages/index.tsx
 import { GetServerSideProps } from "next";
 import { ImageGallery } from "../components/ImageGallery";
 
